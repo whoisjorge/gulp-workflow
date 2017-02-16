@@ -1,5 +1,14 @@
-# Unavailable
+# Gulpjs 'basic' workflow
+Just run <code>npm install --only=dev</code> and then <code>**gulp**</code> to serve files.
 
-git checkout master
-git reset --hard
-git push --force origin master
+### Features
+
+- SASS preprocessor
+- Compress CSS
+    1. Prefix CSS
+- Compress JavaScript
+- Minify HTML
+- Compress Images
+- Browser sync.
+
+
