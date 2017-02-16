@@ -11,10 +11,9 @@ var imagemin     = require('gulp-imagemin');
 var browserSync = require('browser-sync').create();
 /*************************************************/
 
-
 gulp.task('default', ['serve']);
 
- //// 
+ ////////////
 // Static Server + watching scss/js/html files
 gulp.task('serve', ['sass', 'compressjs', 'htmlmin'], function() {
 
@@ -29,6 +28,7 @@ gulp.task('serve', ['sass', 'compressjs', 'htmlmin'], function() {
 
 });
 
+
  //// 
 // ### SASS
 gulp.task ('sass', function(){
@@ -36,7 +36,8 @@ gulp.task ('sass', function(){
     // Compile
     return gulp.src('app/scss/**/*.scss') // From
         .pipe(sass()) // Compile SASS
-        .pipe(cssnano()) // Minify CSS & Prefix
+        .pipe(cssnano()) // Minify CSS
+        // Prefix CSS
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
