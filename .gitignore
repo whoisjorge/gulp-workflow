@@ -1,0 +1,4 @@
+# Dependency directories & GIT
+node_modules/
+.idea
+.gitignore
