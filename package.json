@@ -20,7 +20,7 @@
     "Workflow"
   ],
 
-  "license": "Cat License",
+  "license": "UNLICENSED",
 
   "devDependencies": {
     "browser-sync": "^2.18.7",
