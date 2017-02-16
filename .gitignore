@@ -1,4 +1,7 @@
-# Dependency directories & GIT
+# Do not upload this
+.DS_Store
 node_modules/
+npm-debug.log
 .idea
+# Winner
 .gitignore
