@@ -1,10 +1,12 @@
 import gulp from 'gulp'
 import browserSync from 'browser-sync'
 
-const server = browserSync.create()
+const runServer = browserSync.create()
 
+// https://browsersync.io/docs/options
 gulp.task('serve', () => {
-  server.init({
+  runServer.init({
+    browser: ['google chrome'],
     server: './dist'
   })
   gulp.watch('src/js/*.js', ['compressjs'])

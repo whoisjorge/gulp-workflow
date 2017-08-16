@@ -1,6 +1,6 @@
 <div align="center">
-  <img width="800" src="./docs/header.png" alt="gulp-workflow" />
-  <p>Get rid of painful tasks during development in your front-end workflows</p>
+  <img width="800" src="https://cdn.rawgit.com/whoisjorge/gulp-workflow/bb5f98c1/docs/header.png" alt="modern-gulpflow" />
+  <p>Get rid of painful tasks in your front-end development workflows</p>
 </div>
 
 <div align="center">
@@ -15,9 +15,9 @@
 
 ## Overview
 
-This tool is for developers who are currently loading in resources in their code via multiple tags and finding that dependency management, _or even mantainment_, is becoming "a little" cumbersome as their webpages or applications start to grow.
+This tool is focused to developers who are currently loading in resources in their code via multiple style/script tags and finding that dependency management, or even mantainment of the project architecture, is becoming "a little" cumbersome as their webpages or applications start to grow.
 
-Exactly, from now you are going to build your very own workflows, as advanced as your needs require, and become a PROUDltimate Front-end Developer. Say goodbye to annoying manual bullshit tasks, damn!
+A modern starter kit with which you are going to build your very own workflows, as advanced as your needs require, and become a PROUDltimate Front-end Developer. No more boilerplates or annoying manual bullshit tasks, damn!
 
 <pre>This is a work in progress... Feel free to contribute!</pre>
 

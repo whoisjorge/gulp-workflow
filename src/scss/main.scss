@@ -1,7 +1,59 @@
+// sass-module-importer
+// https://github.com/lucasmotta/sass-module-importer#use-the-importer-with-gulp-sass
+@import "normalize.css/normalize.css";
 
+
+
+
+// Variables
 $gulp-brand-color: #CF4647;
 
-body {
+/**
+ *
+ * Main Stylesheet
+ *
+**/
+html { box-sizing: border-box; }
+* { 
+  box-sizing: inherit;
+}
+*:before, *:after {
+  box-sizing: inherit;
+}
+html {
   color: white;
   background-color: $gulp-brand-color;
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+code,
+pre {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: monospace;
+}
+
+
+main {
+  text-align: center;
+  h1 {
+    font-weight: bold;
+    font-size: 3.5rem;
+  }
+  p {
+    font-style: italic;
+  }
 }
