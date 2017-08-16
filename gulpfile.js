@@ -1,14 +1,34 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var cssnano = require('gulp-cssnano');
-var uglify = require('gulp-uglify');
-    var pump = require('pump');
-var htmlmin = require('gulp-htmlmin');
+'use strict'
+/* ____           _            __ _ _        _ 
+  / ___|  _   _  | |  _ __    / _(_) | ___  | |
+ | |  _  | | | | | | | '_ \  | |_| | |/ _ \ | |
+ | |_| | | |_| | | | | |_) | |  _| | |  __/ |_|
+  \____|  \__,_| |_| | .__/  |_| |_|_|\___| (_)
+  *                  |_|                       
+  *                    
+  * Rather than manage one giant configuration file responsible
+  * for creating multiple tasks, each task has been broken out into
+  * its own file in the 'gulp' folder.
+  *
+*/
 
-var imagemin     = require('gulp-imagemin');
+// import gulp from 'gulp';
+// import chalk from 'chalk';
 
-var browserSync = require('browser-sync').create();
+
+// Default task; start local server & watch for changes.
+// gulp.task('default', ['connect', 'watch']);
+
+const gulp              = require('gulp'),
+      sass              = require('gulp-sass'),
+      autoprefixer      = require('gulp-autoprefixer'),
+      cssnano           = require('gulp-cssnano'),
+      uglify            = require('gulp-uglify'),
+      pump              = require('pump'),
+      htmlmin           = require('gulp-htmlmin'),
+      imagemin          = require('gulp-imagemin'),
+      browserSync       = require('browser-sync').create();
+      
 /*************************************************/
 
 gulp.task('default', ['serve']);
@@ -21,10 +41,10 @@ gulp.task('serve', ['sass', 'compressjs', 'htmlmin'], function() {
         server: "./dist" // Serve /dist/ folder
     });
 
-    gulp.watch("app/js/*.js", ['compressjs']);
-    gulp.watch("app/scss/**/*.scss", ['sass']);
+    gulp.watch("src/js/*.js", ['compressjs']);
+    gulp.watch("src/scss/**/*.scss", ['sass']);
     gulp.watch("dist/*.html").on('change', browserSync.reload);
-    gulp.watch("app/*.html", ['htmlmin']);
+    gulp.watch("src/*.html", ['htmlmin']);
 
 });
 
@@ -34,7 +54,7 @@ gulp.task('serve', ['sass', 'compressjs', 'htmlmin'], function() {
 gulp.task ('sass', function(){
 
     // Compile
-    return gulp.src('app/scss/**/*.scss') // From
+    return gulp.src('src/scss/**/*.scss') // From
         .pipe(sass()) // Compile SASS
         .pipe(cssnano()) // Minify CSS
         // Prefix CSS
@@ -53,7 +73,7 @@ gulp.task ('sass', function(){
 // ### Compress JavaScript
 gulp.task('compressjs', function (cb) {
     pump([
-            gulp.src('app/js/*.js'),
+            gulp.src('src/js/*.js'),
             uglify(),
             gulp.dest('dist/js')
         ],
@@ -64,7 +84,7 @@ gulp.task('compressjs', function (cb) {
  ////
 // ### Compress HTML
 gulp.task('htmlmin', function() {
-    return gulp.src('app/*.html')
+    return gulp.src('src/*.html')
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('dist'));
 });
@@ -77,7 +97,7 @@ gulp.task('htmlmin', function() {
  // ### Compress Images
 // `gulp images` - Run lossless compression on all the images.
 gulp.task('images', function() {
-    return gulp.src('app/img/*')
+    return gulp.src('src/img/*')
         .pipe(imagemin({
             progressive: true,
             interlaced: true,

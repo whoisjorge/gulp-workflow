@@ -1,10 +1,8 @@
 
 <div align="center">
-<br>
   <img width="800" src="./docs/header.png" alt="vue-palmer" />
-  <p color="#ccc">Get rid of painful tasks in your front-end development workflows</p>
+  <p>Get rid of painful tasks during development in your front-end workflows</p>
 </div>
-
 
 
 <div align="center">
@@ -18,22 +16,25 @@
 
 ## Overview
 
+This is a work in progress! Feel free to contribute :thought_balloon:
+
 ## Features
 
-- SASS preprocessor
-- CSSnano
-    - autoprefixer
-- starving HTML output.
-- Browser sync.
-- Image optimization.
-- and so ugly JavaScript output.
+- [X] Sass / SCSS Preprocessor
+- [X] CSSnano
+- [X] Autoprefixer
+- [X] starving HTML output.
+- [X] Browser sync.
+- [X] Image optimization.
+- [X] and so ugly JavaScript output.
 
 
 ## Getting Started
 
-[Node.js](nodejs.org) needs to be installed in your system.
+### Requirements
 
-And [Gulp.js](gulpjs.com).
+- [Node.js](nodejs.org)
+- [Gulp.js](gulpjs.com)
 
 
 
@@ -45,6 +46,7 @@ Just run <code>npm install --only=dev</code> and then <code>**gulp**</code> to s
 ## Resources
 
 
-### MIT Licensed
 
-<div align="center"><a href="#readme">:feelsgood:</a></div>
+
+
+<div align="center"><a href="/LICENSE"><img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" alt="CC0" /></a></div>

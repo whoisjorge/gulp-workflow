@@ -1,29 +1,34 @@
 {
   "name": "gulp-workflow",
   "version": "0.1.0",
-  "description": "The smallest gulpjs task race out there.",
-  "author": "@whoisjorge",
+  "description": "Get rid of painful tasks during development in your front-end workflows",
+  "keywords": [
+    "gulp",
+    "es6",
+    "frontend",
+    "tasks",
+    "workflow"
+  ],
+  "author": "Jorge Moliner <email@whoisjorge.me>",
+  "homepage": "https://github.com/whoisjorge/gulp-workflow#readme",
+  "repository": "git@github.com:whoisjorge/gulp-workflow.git",
+  "bugs": {
+    "url": "https://github.com/whoisjorge/gulp-workflow/issues"
+  },
+  "private": true,
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-  "type": "git",
-  "url": "https://github.com/whoisjorge/gulp-workflow"
-  },
-  "bugs": {
-  "url": "https://github.com/whoisjorge/gulp-workflow/issues"
-  },
-  "keywords": [
-    "Front-end",
-    "Gulp",
-    "Workflow"
-  ],
-
-  "license": "UNLICENSED",
-
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
     "browser-sync": "^2.18.7",
+    "eslint": "^4.4.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-cssnano": "^2.1.2",
@@ -32,5 +37,8 @@
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.0.1",
     "pump": "^1.0.2"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0"
   }
 }
