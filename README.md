@@ -1,9 +1,7 @@
-
 <div align="center">
-  <img width="800" src="./docs/header.png" alt="vue-palmer" />
+  <img width="800" src="./docs/header.png" alt="gulp-workflow" />
   <p>Get rid of painful tasks during development in your front-end workflows</p>
 </div>
-
 
 <div align="center">
 
@@ -14,19 +12,25 @@
 
 </div>
 
+
 ## Overview
 
-This is a work in progress! Feel free to contribute :thought_balloon:
+This tool is for developers who are currently loading in resources in their code via multiple tags and finding that dependency management, _or even mantainment_, is becoming "a little" cumbersome as their webpages or applications start to grow.
+
+Exactly, from now you are going to build your very own workflows, as advanced as your needs require, and become a PROUDltimate Front-end Developer. Say goodbye to annoying manual bullshit tasks, damn!
+
+<pre>This is a work in progress... Feel free to contribute!</pre>
 
 ## Features
 
-- [X] Sass / SCSS Preprocessor
-- [X] CSSnano
+- [X] ES2015 (ES6) and beyond with Babel
+- [X] ESLint support
+- [X] Browsersync
+- [X] CSS preprocessing
 - [X] Autoprefixer
-- [X] starving HTML output.
-- [X] Browser sync.
-- [X] Image optimization.
-- [X] and so ugly JavaScript output.
+- [X] Image optimization
+- [X] Production-ready compressed build
+- [ ] can be configured and integrated into your own development environment and site or app structure.
 
 
 ## Getting Started
@@ -38,12 +42,16 @@ This is a work in progress! Feel free to contribute :thought_balloon:
 
 
 
-Just run <code>npm install --only=dev</code> and then <code>**gulp**</code> to serve files.
+Just run `npm install` or `yarn` and then <code>**gulp**</code> to serve files.
 
 
 ## Usage
 
 ## Resources
+
+- [Gulp.js API Documentation](https://github.com/gulpjs/gulp/blob/master/docs/API.md)
+- ESLint configuration
+- Babel '
 
 
 

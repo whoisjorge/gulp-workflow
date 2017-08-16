@@ -2,6 +2,11 @@
 
 module.exports = {
   root: true,
+  // JavaScript Standard Style 
+  // https://github.com/standard/standard/blob/master/docs/RULES-en.md
+  extends: 'standard',
+  // Custom parsers
+  // https://github.com/babel/babel-eslint#configuration
   parser: 'babel-eslint',
   parserOptions: {
     sourceType: 'module'
@@ -11,9 +16,6 @@ module.exports = {
   env: {
     browser: true
   },
-  // JavaScript Standard Style 
-  // https://github.com/standard/standard/blob/master/docs/RULES-en.md
-  extends: 'standard',
   // Custom Rules
   rules: {
   }
