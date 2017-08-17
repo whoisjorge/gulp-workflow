@@ -1,7 +1,5 @@
-# pretty sure
 dist/
 docs/
 
 # mhm...
 src/
-gulpfile.dev.js

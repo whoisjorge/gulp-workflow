@@ -1,13 +1,17 @@
 import gulp from 'gulp'
 import browserSync from 'browser-sync'
-const runBSync = browserSync.create()
 
+// Get a unique reference
+browserSync.create()
+
+// Start the server
 // https://browsersync.io/docs/options
-gulp.task('serve', ['sass', 'js:min', 'html'], function () {
-  runBSync.init({
+gulp.task('serve', ['sass', 'js:min', 'html'], () => {
+  browserSync.init({
     browser: ['google chrome'],
     server: './dist'
   })
+  // Watch files
   gulp.watch('./src/scss/**/*.scss', ['sass'])
   gulp.watch('./src/js/*.js', ['js:min'])
   gulp.watch('./dist/*.html').on('change', browserSync.reload)
