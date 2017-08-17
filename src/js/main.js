@@ -1,1 +1,4 @@
-console.debug("javascript folder");
+console
+  .debug(
+    "javascript folder"
+  );

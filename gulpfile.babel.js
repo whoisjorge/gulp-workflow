@@ -14,8 +14,4 @@ import gulp from 'gulp'
 import './gulp'
 
 // Default task - start local server & watch for changes
-gulp.task('default', ['start', 'watch'])
-
-// gulp-devtools
-// https://github.com/niki4810/gulp-devtools
-module.exports = require('gulp')
+gulp.task('default', ['start'])

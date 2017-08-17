@@ -1,14 +1,16 @@
 import gulp from 'gulp'
 import chalk from 'chalk'
 
-// Import each task
 import './serve'
-import './production'
+import './development'
 
 gulp.task('start', ['serve'], () => {
-  console.log(chalk.green('[✓] Gulp started successfully ') + chalk.red.bgCyan(' WORKING... '))
+  console.log(chalk.green('[✓] Gulp ended `start` successfully ') + chalk.red.bgCyan(' SERVING FILES... '))
 })
 
-gulp.task('watch', () => {
+//
+//
+//
+gulp.task('production', ['build'], () => {
   // do something
 })

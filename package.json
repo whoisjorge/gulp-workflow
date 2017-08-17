@@ -1,5 +1,5 @@
 {
-  "name": "gulp-workflow",
+  "name": "gulpflow",
   "version": "0.1.0",
   "description": "Get rid of painful tasks during development in your front-end workflows",
   "keywords": [
@@ -10,14 +10,15 @@
     "workflow"
   ],
   "author": "Jorge Moliner <email@whoisjorge.me>",
-  "homepage": "https://github.com/whoisjorge/gulp-workflow#readme",
-  "repository": "git@github.com:whoisjorge/gulp-workflow.git",
+  "homepage": "https://github.com/whoisjorge/gulpflow#readme",
+  "repository": "git@github.com:whoisjorge/gulpflow.git",
   "bugs": {
-    "url": "https://github.com/whoisjorge/gulp-workflow/issues"
+    "url": "https://github.com/whoisjorge/gulpflow/issues"
   },
   "private": true,
-  "main": "gulpfile.js",
+  "main": "gulpfile.babel.js",
   "scripts": {
+    "clean": "rm -rf dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

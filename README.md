@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="800" src="https://cdn.rawgit.com/whoisjorge/gulp-workflow/bb5f98c1/docs/header.png" alt="modern-gulpflow" />
+  <img width="800" src="https://cdn.rawgit.com/whoisjorge/gulp-workflow/bb5f98c1/docs/header.png" alt="gulpflow" />
   <p>Get rid of painful tasks in your front-end development workflows</p>
 </div>
 
@@ -23,9 +23,10 @@ A modern starter kit with which you are going to build your very own workflows, 
 
 ## Features
 
-- [X] ES2015 (ES6) and beyond with Babel
+- [X] ES2015 (ES6) < Babel
 - [X] ESLint support
 - [X] Browsersync
+- [X] Sass module importer
 - [X] CSS preprocessing
 - [X] Autoprefixer
 - [X] Image optimization
@@ -47,14 +48,14 @@ Just run `npm install` or `yarn` and then <code>**gulp**</code> to serve files.
 
 ## Usage
 
+
+
+
 ## Resources
 
 - [Gulp.js API Documentation](https://github.com/gulpjs/gulp/blob/master/docs/API.md)
-- ESLint configuration
-- Babel '
-
-
-
+- [ESLint configuration](http://eslint.org/docs/user-guide/configuring)
+- [Babel usage](https://babeljs.io/)
 
 
 <div align="center"><a href="/LICENSE"><img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" alt="CC0" /></a></div>
