@@ -1,7 +1,7 @@
 <pre align="center">This is a work in progress... Feel free to contribute!</pre>
 
 <div align="center">
-  <img width="800" src="https://cdn.rawgit.com/whoisjorge/gulp-workflow/bb5f98c1/docs/header.png" alt="gulpflow" />
+  <img width="800" src="./src/img/header.png" alt="gulpflow" />
   <p>Get rid of painful tasks in your front-end development workflows</p>
 </div>
 
