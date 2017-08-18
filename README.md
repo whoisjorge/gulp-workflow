@@ -39,7 +39,7 @@ A modern starter kit that will introduce you to awesome advanced front-end devel
 
 Install some amazing tools before continuing (~latest versions). These are specified on requirments just below this text you're reading on so happily:
 
-### Requirements
+__Requirements:__
 
 - [Node.js](nodejs.org)
 - [npm](npmjs.com)
@@ -48,19 +48,19 @@ Install some amazing tools before continuing (~latest versions). These are speci
 
 ## Install
 
-Fork, clone, or just download it! But remember to install those lovely dependencies That make everything just work :cupid:
+Fork, clone or just download it! But remember to install those lovely dependencies that make everything just work
 
 ```bash
 git clone https://github.com/whoisjorge/gulpflow.git
 cd gulpflow
 npm i
 ```
-You can also use `yarn` for the dependecies intallation.
+You can also use `yarn` for manage the dependencies
 
 
 ## Usage
 
-Place all the files on the `src` folder
+Place all the files inside the `src` folder
 
 ### Development
 
@@ -81,5 +81,5 @@ Place all the files on the `src` folder
 
 
 <!-- License -->
-<div align="right"><a href="/LICENSE"><img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" alt="CC0" /></a></div>
+<div align="center"><a href="/LICENSE"><img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" alt="CC0" /></a></div>
 <!-- End -->
