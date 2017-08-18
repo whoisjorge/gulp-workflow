@@ -26,8 +26,8 @@ gulp.task('dev', ['sass', 'vendor:css', 'js', 'vendor:js', 'html', 'images', 'fo
 gulp.task('sass', function () {
   gulp.src('./src/scss/**/*.scss')
 
-    // Import CSS dependencies that will be in 
-    // your main.css file. Avoid vendor files.
+    // Import CSS dependencies required in 
+    // your main.css file. NOT vendor!
     .pipe(sass({ importer: moduleImporter() }))
 
     // Autoprefix
@@ -48,7 +48,7 @@ gulp.task('sass', function () {
 // Vendor CSS files
 gulp.task('vendor:css', () => {
   gulp.src([
-    './node_modules/normalize.css/normalize.css',
+    // './node_modules/normalize.css/normalize.css',
     './node_modules/animate.css/animate.css'
   ])
 

@@ -18,6 +18,8 @@
   "main": "gulpfile.babel.js",
   "scripts": {
     "gulpflow": "rm -rf dist/ && gulp",
+    "build": "rm -rf dist/ && gulp dev && gulp build",
+    "clean": "rm -rf dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

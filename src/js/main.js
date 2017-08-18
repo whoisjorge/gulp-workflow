@@ -1,4 +1,4 @@
 console
   .log(
-    "javascript folder"
+    "javascript console output"
   );
