@@ -11,7 +11,8 @@ import gulp from 'gulp'
   * its own space inside the './gulpflow' folder
   *
 */
-// This is only yours :)
+
+// Import yourVeryOwn workflow :)
 import './gulpflow'
 
 // Default task - start local server & watch for changes

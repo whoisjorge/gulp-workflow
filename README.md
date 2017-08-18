@@ -23,36 +23,54 @@ A modern starter kit that will introduce you to awesome advanced front-end devel
 
 ### Highlights
 
-- [X] ES2015 (ES6) with Babel
+- [X] Delightful
+- [X] ES2015 (ES6) through Babel
 - [X] ESLint support
-- [X] Browsersync and Hot Reload
-- [X] Sass module importer
+- [X] Browsersync with _hot reloading_
+- [X] Sass module importer 
 - [X] CSS/JS preprocessing
-- [X] Autoprefixer for the legacy
+- [X] Autoprefixer _for the legacy_
+- [X] Easy dependency management and usage!
 - [X] Production-ready compressed build with image optimization
-- [ ] can be configured and integrated into your own development environment and site or app structure.
+- [X] __*can be easily configured and integrated into your own development environment and site or app structure!*__
 
 
 ## Getting Started
 
+Install some amazing tools before continuing (~latest versions). These are specified on requirments just below this text you're reading on so happily:
 
 ### Requirements
 
 - [Node.js](nodejs.org)
+- [npm](npmjs.com)
 - [Gulp.js](gulpjs.com)
 
-### Install
 
-Just run `npm install` or `yarn` and then <code>**gulp**</code> to serve files.
+## Install
+
+Fork, clone, or just download it! But remember to install those lovely dependencies That make everything just work :cupid:
+
+```bash
+git clone https://github.com/whoisjorge/gulpflow.git
+cd gulpflow
+npm i
+```
+You can also use `yarn` for the dependecies intallation.
 
 
 ## Usage
 
-`gulp`
-- Build for production - `npm run prod` or `gulp build:prod`
-- Clean ./dist folder - `npm run clean`
+Place all the files on the `src` folder
 
+### Development
 
+`npm run gulpflow`
+
+### Production
+
+`npm run build`
+
+:rocket: Your website is now built on `dist/` folder and damn ready for the outside, fully on steroids :pill:
 
 
 ## Resources
@@ -63,5 +81,5 @@ Just run `npm install` or `yarn` and then <code>**gulp**</code> to serve files.
 
 
 <!-- License -->
-<div align="center"><a href="/LICENSE"><img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" alt="CC0" /></a></div>
+<div align="right"><a href="/LICENSE"><img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" alt="CC0" /></a></div>
 <!-- End -->

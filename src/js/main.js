@@ -1,4 +1,4 @@
 console
-  .debug(
+  .log(
     "javascript folder"
   );

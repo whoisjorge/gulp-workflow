@@ -17,11 +17,14 @@
   },
   "main": "gulpfile.babel.js",
   "scripts": {
-    "clean": "rm -rf dist/",
+    "gulpflow": "rm -rf dist/ && gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "normalize.css": "^7.0.0"
+    "animate.css": "^3.5.2",
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0",
+    "vue": "^2.4.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -38,10 +41,12 @@
     "eslint-plugin-standard": "^3.0.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.2",
     "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^3.1.1",
     "gulp-sass": "^3.1.0",
+    "gulp-strip-comments": "^2.5.1",
     "gulp-uglify": "^2.0.1",
     "pump": "^1.0.2",
     "sass-module-importer": "^1.4.0"

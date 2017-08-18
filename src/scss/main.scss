@@ -3,16 +3,13 @@
 @import "normalize.css/normalize.css";
 
 
-
-
-// Variables
-$gulp-brand-color: #CF4647;
-
 /**
- *
  * Main Stylesheet
  *
 **/
+@import "_variables";
+
+
 html { box-sizing: border-box; }
 * { 
   box-sizing: inherit;
@@ -50,6 +47,8 @@ pre {
 main {
   text-align: center;
   h1 {
+    font-family: 'Merienda One', cursive;
+    letter-spacing: .2em;
     font-weight: bold;
     font-size: 3.5rem;
   }
