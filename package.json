@@ -1,7 +1,7 @@
 {
   "name": "gulpflow",
   "version": "0.1.0",
-  "description": "Get rid of painful tasks during development in your front-end workflows",
+  "description": "Design and build your very own modern front-end development workflow",
   "keywords": [
     "gulp",
     "es6",
@@ -15,7 +15,6 @@
   "bugs": {
     "url": "https://github.com/whoisjorge/gulpflow/issues"
   },
-  "private": true,
   "main": "gulpfile.babel.js",
   "scripts": {
     "clean": "rm -rf dist/",
@@ -46,5 +45,6 @@
     "gulp-uglify": "^2.0.1",
     "pump": "^1.0.2",
     "sass-module-importer": "^1.4.0"
-  }
+  },
+  "private": true
 }

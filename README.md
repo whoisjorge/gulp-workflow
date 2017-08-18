@@ -2,7 +2,7 @@
 
 <div align="center">
   <img width="800" src="./src/img/header.png" alt="gulpflow" />
-  <p>Get rid of painful tasks in your front-end development workflows</p>
+  <p>Design and build your very own modern front-end development workflow</p>
 </div>
 
 <div align="center">

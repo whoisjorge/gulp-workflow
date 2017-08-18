@@ -1,3 +1,4 @@
+import gulp from 'gulp'
 /* ____           _            _ 
   / ___|  _   _  | |  _ __    | |
  | |  _  | | | | | | | '_ \   | |
@@ -7,14 +8,11 @@
   *                    
   * Rather than manage one giant configuration file for
   * multiple tasks, each task has been broken out into
-  * its own space inside the './gulp' folder
+  * its own space inside the './gulpflow' folder
   *
 */
-import gulp from 'gulp'
-
-//
-import './gulp'
-//
+// This is only yours :)
+import './gulpflow'
 
 // Default task - start local server & watch for changes
 gulp.task('default', ['start'])

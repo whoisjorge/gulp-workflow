@@ -6,7 +6,7 @@ browserSync.create()
 
 // Start the server
 // https://browsersync.io/docs/options
-gulp.task('serve', ['sass', 'js:min', 'html'], () => {
+gulp.task('serve', ['sass', 'js', 'html'], () => {
   browserSync.init({
     browser: ['google chrome'],
     server: './dist'
