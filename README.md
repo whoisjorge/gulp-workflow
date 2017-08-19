@@ -23,15 +23,12 @@ _A modern starter kit that will introduce you into awesome **advanced front-end 
 
 ### Highlights
 
-- [X] ES2015 (ES6) through Babel
 - [X] ESLint support
-- [X] Browsersync with _hot reloading_
-- [ ] HTML/CSS/JS preprocessing
+- [X] BrowserSync with _hot reloading_
+- [X] HTML/CSS/JS preprocessing
+- [X] Concat CSS & _vendor_
 - [X] Autoprefixer _for the legacy_
 - [X] Production-ready compressed build with image optimization
-- [X] Easy dependency management and usage :octocat:
- 
-__*You can easily configure and integrate your own development environment starting from this basic approach!*__
 
 
 ## Getting Started
@@ -59,7 +56,45 @@ You can also use `yarn` for dependencies management.
 
 ## Usage
 
-Place everything inside `src/` folder, the same way as the default files.
+You can easily __configure and integrate__ your front-development project. Take a look in the project's architecture and see how things work:
+
+
+````bash
+.                         
+├── .babelrc                          # Babel config.
+├── .editorconfig                     # maintain consistent coding styles 
+├── .eslintrc.js                      # configurable JavaScript linter
+├── .gitignore
+├── gulpfile.babel.js                 # The most important file here.
+├── package.json                      # project requirements (node)
+│
+├── gulpflow                          # Gulp workflow (#development)
+│   ├── index.js
+│   ├── serve.js
+│   ├── development.js
+│   ├── production.js
+│   └── ...
+│
+├── src                               # Main development files of any project
+│   ├── fonts
+│   │   └── ...
+│   ├── img
+│   │   └── ...
+│   ├── js                            # javascripts
+│   │   ├── main.js
+│   │   └── ...
+│   ├── scss                          # Sass styles
+│   │   ├── main.scss
+│   │   └── ...
+│   │ 
+│   ├── index.html                    # Main layout
+│   │                     
+│   └── YOUR_FILES ...
+│
+│
+└── dist                              # distributable website
+````
+
 
 ### Start a development server
 
@@ -77,16 +112,15 @@ npm run build
 
 :rocket: Your website is now built on `dist/` folder and ready for the outside
 
-## Contributing
 
-This repository welcomes contributions and corrections. Before submitting a pull request, ensure that you respect these [guidelines](CONTRIBUTING.md).
-
-## Resources
+## Useful information
 
 - [Gulp.js API documentation](https://github.com/gulpjs/gulp/blob/master/docs/API.md)
 - [ESLint configuration](http://eslint.org/docs/user-guide/configuring)
 - [Babel usage](https://babeljs.io/)
 
+## Contributing
+Every contribution and/or correction is always appreciated, and very welcomed! Feel free to sumit a pull request and [help](CONTRIBUTING.md) this repository with your knowledge :octocat:
 
 <!-- License -->
 <div align="center"><a href="/LICENSE"><img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" alt="CC0" /></a></div>
