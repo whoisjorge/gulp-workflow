@@ -26,13 +26,12 @@ _A modern starter kit that will introduce you into awesome **advanced front-end 
 - [X] ES2015 (ES6) through Babel
 - [X] ESLint support
 - [X] Browsersync with _hot reloading_
-- [X] Sass module importer 
-- [X] CSS/JS preprocessing
+- [ ] HTML/CSS/JS preprocessing
 - [X] Autoprefixer _for the legacy_
-- [X] Easy dependency management and usage!
 - [X] Production-ready compressed build with image optimization
+- [X] Easy dependency management and usage :octocat:
  
-__*It can be easily configured and integrated into your own development environment and site or app structure!*__
+__*You can easily configure and integrate your own development environment starting from this basic approach!*__
 
 
 ## Getting Started
@@ -46,7 +45,7 @@ __Requirements:__
 - [Gulp.js](https://gulpjs.com)
 
 
-## Set up the project
+## Installation
 
 Fork, clone or simply download this repository. The only thing that cares is the fact of install those lovely dependencies that make everything work beautifully:
 
@@ -60,7 +59,7 @@ You can also use `yarn` for dependencies management.
 
 ## Usage
 
-Place everything inside `src/` folder. And remember to clean the existing ones by default on this repository.
+Place everything inside `src/` folder, the same way as the default files.
 
 ### Start a development server
 
@@ -78,6 +77,9 @@ npm run build
 
 :rocket: Your website is now built on `dist/` folder and ready for the outside
 
+## Contributing
+
+This repository welcomes contributions and corrections. Before submitting a pull request, ensure that you respect these [guidelines](CONTRIBUTING.md).
 
 ## Resources
 
