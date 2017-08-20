@@ -5,6 +5,6 @@
 3. Write and comment your code!
 4. Commit changes — `git commit -am 'awesome improvements!'`
 5. Push — `git push origin new-branch`
-6. Submit a PR! 
+6. Submit a PR!
 
 <div align="center">:seedling:</div>

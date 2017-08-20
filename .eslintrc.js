@@ -2,7 +2,7 @@
 
 module.exports = {
   root: true,
-  // JavaScript Standard Style 
+  // JavaScript Standard Style
   // https://github.com/standard/standard/blob/master/docs/RULES-en.md
   extends: 'standard',
   // Custom parsers
@@ -11,7 +11,7 @@ module.exports = {
   parserOptions: {
     sourceType: 'module'
   },
-  // Specifying Environments 
+  // Specifying Environments
   // http://eslint.org/docs/user-guide/configuring#specifying-environments
   env: {
     browser: true

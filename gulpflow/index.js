@@ -10,8 +10,6 @@ gulp.task('start', ['serve'], () => {
 })
 
 //
-//
-//
 gulp.task('production', ['build'], () => {
-  // do something
+  // prepare build dist files
 })

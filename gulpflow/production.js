@@ -34,8 +34,8 @@ gulp.task('js:min', (cb) => {
   ], cb)
 })
 
-// 
-// 
+//
+//
 // HTML minification
 gulp.task('html:min', () => {
   return gulp.src('src/*.html')

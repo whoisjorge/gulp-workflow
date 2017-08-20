@@ -56,13 +56,13 @@ You can also use `yarn` for dependencies management.
 
 ## Usage
 
-You can easily __configure and integrate__ your front-development project. Take a look in the project's architecture and see how things work:
+It's very easy __configure and integrate__ your front-development project. Take a look in the project's architecture and see how things work:
 
 
 ````bash
-.                         
+.
 ├── .babelrc                          # Babel config.
-├── .editorconfig                     # maintain consistent coding styles 
+├── .editorconfig                     # maintain consistent coding styles
 ├── .eslintrc.js                      # configurable JavaScript linter
 ├── .gitignore
 ├── gulpfile.babel.js                 # The most important file here.
@@ -86,9 +86,9 @@ You can easily __configure and integrate__ your front-development project. Take 
 │   ├── scss                          # Sass styles
 │   │   ├── main.scss
 │   │   └── ...
-│   │ 
+│   │
 │   ├── index.html                    # Main layout
-│   │                     
+│   │
 │   └── YOUR_FILES ...
 │
 │
@@ -122,6 +122,7 @@ npm run build
 ## Contributing
 Every contribution and/or correction is always appreciated, and very welcomed! Feel free to sumit a pull request and [help](CONTRIBUTING.md) this repository with your knowledge :octocat:
 
+
 <!-- License -->
-<div align="center"><a href="/LICENSE"><img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" alt="CC0" /></a></div>
+<br><div align="center"><a href="/LICENSE"><img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" alt="CC0" /></a></div>
 <!-- End -->

@@ -9,7 +9,7 @@ import cssnano from 'gulp-cssnano'
 import strip from 'gulp-strip-comments'
 import pump from 'pump'
 
-/*     
+/*
   * DEVELOPMENT TASK
   *  It just builds every asset into ./dist folder, nothing else
   *   Note: only vendor assets are production-ready!
@@ -18,15 +18,15 @@ gulp.task('dev', ['sass', 'vendor:css', 'js', 'vendor:js', 'html', 'images', 'fo
   console.log(chalk.black.bgYellow('\n FILES COPIED \n'))
 })
 
-/* ___   _   ___ ___ 
+/* ___   _   ___ ___
   / __| /_\ / __/ __|
   \__ \/ _ \\__ \__ \
-  |___/_/ \_\___/___/                  
+  |___/_/ \_\___/___/
 */
 gulp.task('sass', function () {
   gulp.src('./src/scss/**/*.scss')
 
-    // Import CSS dependencies required in 
+    // Import CSS dependencies required in
     // your main.css file. NOT vendor!
     .pipe(sass({ importer: moduleImporter() }))
 
@@ -64,11 +64,11 @@ gulp.task('vendor:css', () => {
     .pipe(gulp.dest('./dist/css/'))
 })
 
-/*   _               ___         _      _   
-  _ | |__ ___ ____ _/ __| __ _ _(_)_ __| |_ 
+/*   _               ___         _      _
+  _ | |__ ___ ____ _/ __| __ _ _(_)_ __| |_
  | || / _` \ V / _` \__ \/ _| '_| | '_ \  _|
   \__/\__,_|\_/\__,_|___/\__|_| |_| .__/\__|
-                                  |_|       
+                                  |_|
 */
 gulp.task('js', function (cb) {
   pump([
@@ -99,9 +99,9 @@ gulp.task('vendor:js', () => {
 
 //
 
-/* _  _ _____ __  __ _    
-  | || |_   _|  \/  | |   
-  | __ | | | | |\/| | |__ 
+/* _  _ _____ __  __ _
+  | || |_   _|  \/  | |
+  | __ | | | | |\/| | |__
   |_||_| |_| |_|  |_|____|
 */
 gulp.task('html', () => {
@@ -111,7 +111,7 @@ gulp.task('html', () => {
 
 //
 
-/* ___ __  __   _   ___ ___ ___ 
+/* ___ __  __   _   ___ ___ ___
   |_ _|  \/  | /_\ / __| __/ __|
    | || |\/| |/ _ \ (_ | _|\__ \
   |___|_|  |_/_/ \_\___|___|___/
@@ -123,7 +123,7 @@ gulp.task('images', () => {
 
 //
 
-/* ___ ___  _  _ _____ ___ 
+/* ___ ___  _  _ _____ ___
   | __/ _ \| \| |_   _/ __|
   | _| (_) | .` | | | \__ \
   |_| \___/|_|\_| |_| |___/
