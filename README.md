@@ -44,8 +44,6 @@ __Requirements:__
 
 ## Installation
 
-Fork, clone or simply download this repository. The only thing that cares is the fact of install those lovely dependencies that make everything work beautifully:
-
 ```bash
 git clone https://github.com/whoisjorge/gulpflow.git
 cd gulpflow
@@ -89,7 +87,7 @@ It's very easy __configure and integrate__ your front-development project. Take 
 │   │
 │   ├── index.html                    # Main layout
 │   │
-│   └── YOUR_FILES ...
+│   └── *.*                           # Create your own project files
 │
 │
 └── dist                              # distributable website
@@ -119,10 +117,11 @@ npm run build
 - [ESLint configuration](http://eslint.org/docs/user-guide/configuring)
 - [Babel usage](https://babeljs.io/)
 
+
+
 ## Contributing
 Every contribution and/or correction is always appreciated, and very welcomed! Feel free to sumit a pull request and [help](CONTRIBUTING.md) this repository with your knowledge :octocat:
 
-
 <!-- License -->
-<br><div align="center"><a href="/LICENSE"><img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" alt="CC0" /></a></div>
+<br><div align="center"><a href="/LICENSE"><img width="100" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/publicdomain.png" alt="CC0" /></a></div>
 <!-- End -->
