@@ -1,5 +1,3 @@
-<pre align="center">This is a work in progress... Feel free to contribute!</pre>
-
 <div align="center">
   <img width="800" src="./src/img/header.png" alt="gulpflow" />
   <p>Design and build your very own modern front-end development workflow</p>
@@ -17,9 +15,9 @@
 
 ## Overview
 
-This tool is for developers who are currently loading in resources in their code via multiple `script` calls and finding that dependency management, or even mantainment of project's architecture, is becoming _a little_ cumbersome as their webpages or applications start to grow.
+This tool is for developers who are currently loading in resources in their code via multiple `script` calls and finding that dependency management is becoming _a little_ cumbersome as their webpages or applications start to grow.
 
-_A modern starter kit that will introduce you into awesome **advanced front-end development tools** to write your very own workflows, as advanced as your needs require!_
+_A modern starter kit that will introduce you into awesome **advanced front-end development tools** to write your very own workflows, from the basics!_
 
 ### Highlights
 
@@ -33,7 +31,7 @@ _A modern starter kit that will introduce you into awesome **advanced front-end 
 
 ## Getting Started
 
-Install some amazing tools before continuing **~ latest versions**. These are specified on "requirements" section, just below this text you're reading on so happily :smile:
+Install some amazing tools in your development system before continuing **~ latest versions**. These are specified on "requirements" section, just below this text you're reading on so happily :smile:
 
 __Requirements:__
 
@@ -63,10 +61,10 @@ It's very easy __configure and integrate__ your front-development project. Take 
 ├── .editorconfig                     # maintain consistent coding styles
 ├── .eslintrc.js                      # configurable JavaScript linter
 ├── .gitignore
-├── gulpfile.babel.js                 # The most important file here.
-├── package.json                      # project requirements (node)
+├── gulpfile.babel.js                 # The most important file here
+├── package.json
 │
-├── gulpflow                          # Gulp workflow (#development)
+├── gulpflow                          # Gulp workflow (#--development)
 │   ├── index.js
 │   ├── serve.js
 │   ├── development.js
@@ -81,16 +79,16 @@ It's very easy __configure and integrate__ your front-development project. Take 
 │   ├── js                            # javascripts
 │   │   ├── main.js
 │   │   └── ...
-│   ├── scss                          # Sass styles
+│   ├── scss                          # stylesheets
 │   │   ├── main.scss
 │   │   └── ...
 │   │
 │   ├── index.html                    # Main layout
 │   │
-│   └── *.*                           # Create your own project files
+│   └── *.*                           # Make your own project files
 │
 │
-└── dist                              # distributable website
+└── dist                              # production website
 ````
 
 
