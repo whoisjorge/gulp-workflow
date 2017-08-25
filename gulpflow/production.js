@@ -1,7 +1,5 @@
 import gulp from 'gulp'
-import browserSync from 'browser-sync'
-import sass from 'gulp-sass'
-import moduleImporter from 'sass-module-importer'
+import chalk from 'chalk'
 import autoprefixer from 'gulp-autoprefixer'
 import cssnano from 'gulp-cssnano'
 import uglify from 'gulp-uglify'
@@ -9,47 +7,47 @@ import pump from 'pump'
 import htmlmin from 'gulp-htmlmin'
 import imagemin from 'gulp-imagemin'
 
-// > COMPILATION
-// >
-// - Compile SASS, minify CSS and autoprefix it
-gulp.task('sass', () => {
-  gulp.src('src/scss/**/*.scss')
-    .pipe(sass({ importer: moduleImporter() }))
+/*
+  * PRODUCTION TASK
+  * basic stuff
+  *
+  *
+*/
+gulp.task('build', ['css:min', 'js:min', 'html:min', 'image:min'], () => {
+  console.log(chalk.black.bgYellow('\n .dist/ is now READY for PRODUCTION') + ' 🚀 \n')
+})
+
+// CSS minification
+gulp.task('css:min', () => {
+  gulp.src('dist/css/**/*.css')
     .pipe(cssnano())
     .pipe(autoprefixer({
       browsers: ['last 2 versions', '> 1%'],
       cascade: false
     }))
     .pipe(gulp.dest('dist/css'))
-    // Enable browserSync
-    .pipe(browserSync.stream())
 })
 
 // JavaScript minification
 gulp.task('js:min', (cb) => {
   pump([
-    gulp.src('src/js/*.js'),
+    gulp.src('dist/js/*.js'),
     uglify(),
     gulp.dest('dist/js')
   ], cb)
 })
 
-//
-//
 // HTML minification
 gulp.task('html:min', () => {
-  return gulp.src('src/*.html')
+  return gulp.src('dist/**/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('dist'))
 })
 
-//
-//
-//
 // Image Compression
 // Run lossless compression on all the images
 gulp.task('image:min', () => {
-  return gulp.src('src/img/*')
+  return gulp.src('dist/img/*')
     .pipe(imagemin({
       progressive: true,
       interlaced: true,

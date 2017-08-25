@@ -6,7 +6,7 @@ browserSync.create()
 
 // Start the server
 // https://browsersync.io/docs/options
-gulp.task('serve', ['dev'], () => {
+gulp.task('serve', ['generate'], () => {
   browserSync.init({
 
     // localhost:8080

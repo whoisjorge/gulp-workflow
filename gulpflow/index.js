@@ -3,13 +3,14 @@ import chalk from 'chalk'
 
 import './serve'
 import './development'
+import './production'
 
-// Run development server
-gulp.task('start', ['serve'], () => {
-  console.log(chalk.green('\n[✓] Gulpflow successfully started ') + chalk.red.bgCyan('\n SERVING FILES... \n'))
+// Run development task
+gulp.task('development', ['serve'], () => {
+  console.log(chalk.green('\n[✓] Development mode started succesfully ') + chalk.magenta.bgWhite('\n- WATCHING FOR CHANGES ... \n'))
 })
 
-//
+// Run production task
 gulp.task('production', ['build'], () => {
-  // prepare build dist files
+  console.log(chalk.green('\n[✓] Built succesfully '))
 })

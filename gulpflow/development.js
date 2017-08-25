@@ -11,11 +11,11 @@ import pump from 'pump'
 
 /*
   * DEVELOPMENT TASK
-  *  It just builds every asset into ./dist folder, nothing else
+  *  It just builds every asset into ./dist folder
   *   Note: only vendor assets are production-ready!
 */
-gulp.task('dev', ['sass', 'vendor:css', 'js', 'vendor:js', 'html', 'images', 'fonts'], () => {
-  console.log(chalk.black.bgYellow('\n FILES COPIED \n'))
+gulp.task('generate', ['sass', 'css:vendor', 'js', 'js:vendor', 'html', 'images', 'fonts'], () => {
+  console.log(chalk.cyan.bgBlack('\n < WEBSITE GENERATED > \n'))
 })
 
 /* ___   _   ___ ___
@@ -46,7 +46,7 @@ gulp.task('sass', function () {
 //
 
 // Vendor CSS files
-gulp.task('vendor:css', () => {
+gulp.task('css:vendor', () => {
   gulp.src([
     // './node_modules/normalize.css/normalize.css',
     './node_modules/animate.css/animate.css'
@@ -81,7 +81,7 @@ gulp.task('js', function (cb) {
 //
 
 // Vendor JavaScript files
-gulp.task('vendor:js', () => {
+gulp.task('js:vendor', () => {
   gulp.src([
     './node_modules/jquery/dist/jquery.min.js',
     './node_modules/vue/dist/vue.min.js'
