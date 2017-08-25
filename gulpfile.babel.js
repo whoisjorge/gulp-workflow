@@ -12,8 +12,11 @@ import gulp from 'gulp'
   *
 */
 
-// Import yourVeryOwn workflow :)
+// Imports a very basic workflow
 import './gulpflow'
 
-// Default task - start local server & watch for changes
-gulp.task('default', ['start'])
+/*
+  * Default task - `gulp`
+  * Starts a local server & watch for changes
+*/
+gulp.task('default', ['development'])
