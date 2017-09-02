@@ -36,16 +36,15 @@ gulp.task('sass', function () {
       cascade: false
     }))
 
-    // Destination
+    // Destination:
     .pipe(gulp.dest('./dist/css/'))
 
     // Enable browserSync
     .pipe(browserSync.stream())
 })
 
-//
-
-// Vendor CSS files
+/***********************************************/
+// VENDOR (CSS)
 gulp.task('css:vendor', () => {
   gulp.src([
     // './node_modules/normalize.css/normalize.css',
@@ -78,9 +77,8 @@ gulp.task('js', function (cb) {
   ], cb)
 })
 
-//
-
-// Vendor JavaScript files
+/***********************************************/
+// VENDOR (JS)
 gulp.task('js:vendor', () => {
   gulp.src([
     './node_modules/jquery/dist/jquery.min.js',
@@ -97,8 +95,6 @@ gulp.task('js:vendor', () => {
     .pipe(gulp.dest('./dist/js/'))
 })
 
-//
-
 /* _  _ _____ __  __ _
   | || |_   _|  \/  | |
   | __ | | | | |\/| | |__
@@ -109,8 +105,6 @@ gulp.task('html', () => {
     .pipe(gulp.dest('./dist'))
 })
 
-//
-
 /* ___ __  __   _   ___ ___ ___
   |_ _|  \/  | /_\ / __| __/ __|
    | || |\/| |/ _ \ (_ | _|\__ \
@@ -120,8 +114,6 @@ gulp.task('images', () => {
   gulp.src('./src/img/*.{png,svg}')
     .pipe(gulp.dest('./dist/img/'))
 })
-
-//
 
 /* ___ ___  _  _ _____ ___
   | __/ _ \| \| |_   _/ __|

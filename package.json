@@ -1,23 +1,12 @@
 {
   "name": "gulpflow",
-  "version": "0.1.0",
   "description": "Design and build your very own modern front-end development workflow",
+  "version": "0.1.0",
   "author": "Jorge Moliner <email@whoisjorge.me>",
   "license": "UNLICENSE",
-  "keywords": [
-    "gulp",
-    "es6",
-    "frontend",
-    "tasks",
-    "workflow"
-  ],
-  "homepage": "https://github.com/whoisjorge/gulpflow#readme",
   "repository": {
     "type": "git",
-    "url": "git://github.com/whoisjorge/gulpflow.git"
-  },
-  "bugs": {
-    "url": "https://github.com/whoisjorge/gulpflow/issues"
+    "url": "https://github.com/whoisjorge/gulpflow.git"
   },
   "main": "gulpfile.babel.js",
   "scripts": {
