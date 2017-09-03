@@ -12,7 +12,6 @@ import gulp from 'gulp'
   *
 */
 
-// Imports a very basic workflow
 import './gulpflow'
 
 /*

@@ -15,13 +15,13 @@ gulp.task('serve', ['generate'], () => {
     // Delightful launch
     browser: ['google chrome'],
 
-    // Serve this!
+    // The static server
     server: './dist'
   })
 
   // Watch files
   gulp.watch('./src/scss/**/*.scss', ['sass'])
   gulp.watch('./src/js/*.js', ['js']).on('change', browserSync.reload)
-  gulp.watch('./dist/*.html').on('change', browserSync.reload)
-  gulp.watch('./src/*.html', ['html'])
+  gulp.watch('./dist/**/*.html').on('change', browserSync.reload)
+  gulp.watch('./src/**/*.html', ['html'])
 })

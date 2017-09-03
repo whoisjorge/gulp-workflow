@@ -5,8 +5,6 @@ import sass from 'gulp-sass'
 import moduleImporter from 'sass-module-importer'
 import autoprefixer from 'gulp-autoprefixer'
 import concat from 'gulp-concat'
-import cssnano from 'gulp-cssnano'
-import strip from 'gulp-strip-comments'
 import pump from 'pump'
 
 /*
@@ -27,12 +25,12 @@ gulp.task('sass', function () {
   gulp.src('./src/scss/**/*.scss')
 
     // Import CSS dependencies required in
-    // your main.css file. NOT vendor!
+    // your main.scss file. NOT vendor!
     .pipe(sass({ importer: moduleImporter() }))
 
     // Autoprefix
     .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
+      browsers: ['last 4 versions'],
       cascade: false
     }))
 
@@ -53,11 +51,6 @@ gulp.task('css:vendor', () => {
 
     // Concatenate
     .pipe(concat('vendor.css'))
-
-    // Minify and remove comments
-    .pipe(cssnano({
-      discardComments: {removeAll: true}
-    }))
 
     // Destination:
     .pipe(gulp.dest('./dist/css/'))
@@ -89,7 +82,7 @@ gulp.task('js:vendor', () => {
     .pipe(concat('vendor.js'))
 
     // Remove comments
-    .pipe(strip())
+    // .pipe(strip())
 
     // Destination:
     .pipe(gulp.dest('./dist/js/'))
