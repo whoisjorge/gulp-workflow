@@ -1,8 +1,7 @@
-# EditorConfig is awesome:
-# http://EditorConfig.org
-
+# EditorConfig is awesome: http://EditorConfig.org
 root = true
 
+# Unix-style newlines with a newline ending every file
 [*]
 charset = utf-8
 indent_style = tab
